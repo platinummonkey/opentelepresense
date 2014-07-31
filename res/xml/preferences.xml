@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference
+        android:key="connection_host"
+        android:title="Broker Connection"
+        android:summary="Define how to connect to the MQTT Broker"
+        android:dialogTitle="Broker Connection"
+        android:dialogMessage="Define how to connect to the MQTT Broker"
+        android:defaultValue="tcp://10.0.2.2:1883" />
+
+    <EditTextPreference 
+        android:key="connection_topic_subscribe"
+        android:title="Broker Listen Topic"
+        android:summary="Define the topic to subscribe to"
+        android:dialogTitle="Broker Listen Topic"
+        android:dialogMessage="Define the topic to subscribe to"
+        android:defaultValue="tp0000/default/sub" />
+
+    <EditTextPreference 
+        android:key="connection_topic_publish"
+        android:title="Broker Publish Topic"
+        android:summary="Define the topic to publish to"
+        android:dialogTitle="Broker Publish Topic"
+        android:dialogMessage="Define the topic to publish to"
+        android:defaultValue="tp0000/default/pub" />
+
+    <EditTextPreference 
+        android:key="connection_device_id"
+        android:title="Device ID"
+        android:summary="Define the unique device id"
+        android:dialogTitle="Device ID"
+        android:dialogMessage="Define the unique device id"
+        android:defaultValue="tp0000" />
+
+</PreferenceScreen>
